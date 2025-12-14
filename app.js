@@ -1,5 +1,5 @@
 // Utilidades básicas
-const hashedPassword = "hash_generado_SHA256_aquí";
+const hashedPassword = "aadb41e536d5a37a44593e2308070b139e337b3e631da513a2641c319c2223b7";
 
 // Obtiene y muestra la fecha actual
 function getFormattedDate() {
