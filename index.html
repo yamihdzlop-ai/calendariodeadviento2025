@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Adviento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-container" class="auth-page">
+        <form id="login-form">
+            <h1>Bienvenido</h1>
+            <p>Ingresa la contraseña para acceder al calendario.</p>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+
+    <div id="calendar-container" class="hidden">
+        <header>
+            <h1>Calendario de Adviento</h1>
+            <p>Hoy es: <span id="current-date"></span></p>
+            <p>Disponible: Día <span id="current-day-number"></span> de 12</p>
+            <p>Faltan <span id="days-left"></span> días para el 25</p>
+            <p>Termina el: 25 de diciembre</p>
+            <button id="logout-button">Cerrar sesión</button>
+        </header>
+        <main id="calendar-grid">
+            <!-- Aquí se generan dinámicamente las tarjetas de los días -->
+        </main>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div id="modal-content">
+            <h2 id="gift-title"></h2>
+            <p id="gift-message"></p>
+            <a id="gift-link" target="_blank" rel="noopener noreferrer"></a>
+            <button id="close-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="gifts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
